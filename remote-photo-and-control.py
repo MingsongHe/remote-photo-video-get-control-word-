@@ -30,9 +30,9 @@ index_no1 = 0
 index_no2 = 0
 imgname ="ABC"
 
-url_control_word = "https://bilingualplan.com/zh/iot-photo-and-controler/"
-url_upload_1 = "https://bilingualplan.com/meeting_room_get_upload_image.php"
-url_upload_2 = "https://bilingualplan.com/office_get_upload_image.php"
+url_control_word = "https://xxxx.com/zh/xxxxxx/" #有控制字的页面
+url_upload_1 = "https://xxxx.com/meeting_room_get_upload_image.php"
+url_upload_2 = "https://xxxx.com/office_get_upload_image.php"
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
