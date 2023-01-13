@@ -38,11 +38,11 @@ headers={
         "User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36"
     }
 
-url_control_word = "https://bilingualplan.com/zh/iot-photo-and-controler/"
-url_upload_1 = "https://bilingualplan.com/meeting_room_get_upload_video.php"
-url_upload_2 = "https://bilingualplan.com/office_get_upload_video.php"
-url_bilin="https://bilingualplan.com"
-url_ems="https://ems156.com"
+url_control_word = "https://xxxx.com/zh/iot-photo-and-controler/"  #有控制字的页面
+url_upload_1 = "https://xxxx.com/meeting_room_get_upload_video.php"
+url_upload_2 = "https://xxxx.com/office_get_upload_video.php"
+url_bilin="https://xxxx.com"                                       #发事件的方式，改变控制位，测试使用
+url_ems="https://xxxx.com"
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
