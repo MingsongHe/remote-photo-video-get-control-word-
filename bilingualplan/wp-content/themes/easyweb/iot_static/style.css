@@ -1,0 +1,321 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+body{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f8fa;
+}
+.iot_text_field {
+    width: 20px;
+    height: 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2;
+}
+.img-video
+  {  
+  padding:4px;
+  line-height:1.42857143;
+  background-color:#fff;
+  border:2px solid #ddd;
+  border-radius:6px;
+  max-width:98%;
+  float: center;
+  position:relative;
+  top:5px;
+  text-align: center;
+ }
+ .box{
+  width:95%; 
+  margin-left:auto; 
+  margin-right:auto;
+/*  border:2px solid #deb887; */
+  text-align:center; 
+  position:relative;
+  vertical-align:middle;
+ }
+.vline{
+	display:inline-block; 
+	height:100%; width:0; 
+	vertical-align:middle;
+}
+.prev, .next{
+	width:50%; 
+	_height:2000px; 
+	background-image:url(about:blank); 
+	position:absolute; 
+	top:0; 
+	bottom:0; outline:none;
+}
+.prev{
+	cursor:url(https://bilingualplan.com/wp-content/themes/easyweb/pic_prev.ico) 4 20, auto;
+	left:0;
+}
+.next{
+	cursor:url(https://bilingualplan.com/wp-content/themes/easyweb/pic_next.ico) 4 20, auto; 
+	right:0;
+}
+.pos{
+    width: 632px;
+    height: 36px;
+    background: #544646;
+    background: linear-gradient(to right, rgba(112, 46, 46, 1),rgba(112, 46, 46, 0.8) 70%, rgba(0,0,0,0));
+    margin-top: -62px;     /*  正确的是-7  */
+    position: relative;
+    float: center;
+    margin-left:auto; 
+	margin-right:auto;   
+    }
+.video_show{
+    width : 640px;
+    height : 480px;
+    border : 2px solid #deb887;
+}
+#progress{
+    height: 12px;
+    width: 320px;
+    position:absolute;
+    top: 12px;
+    left: 80px;
+    cursor: pointer;
+}
+.timebox{
+    position:absolute;
+    top: 9px;
+    left: 420px;
+    cursor: pointer;
+    color: white;
+}
+#playBtn{
+    position:absolute;
+    top: 2px;
+    left: 20px;
+    cursor: pointer;
+    }
+#full{
+    position:absolute;
+    top: 4px;
+    right: 20px;
+    cursor: pointer;
+}
+@media (min-width: 607px) and (max-width: 771px){
+.pos{
+    width: 472px;
+    height: 36px;
+    background: #544646;
+    background: linear-gradient(to right, rgba(112, 46, 46, 1),rgba(112, 46, 46, 0.8) 70%, rgba(0,0,0,0));
+    margin-top: -62px;     /*  正确的是-7  */
+    position: relative;
+    float: center;
+    margin-left:auto; 
+	margin-right:auto;   
+}
+.video_show{
+    width : 480px;
+    height : 360px;
+    border : 2px solid #deb887;
+}
+#progress{
+    height: 12px;
+    width: 240px;
+    position:absolute;
+    top: 12px;
+    left: 60px;
+    cursor: pointer;
+}
+.timebox{
+    position:absolute;
+    top: 9px;
+    left: 315px;
+    cursor: pointer;
+    color: white;
+}
+#playBtn{
+    position:absolute;
+    top: 2px;
+    left: 6px;
+    cursor: pointer;
+}
+#full{
+    position:absolute;
+    top: 2px;
+    right: 6px;
+    cursor: pointer;
+}
+}
+@media screen and (max-width: 606px){
+.pos{
+    width: 379px;
+    height: 36px;
+    background: #544646;
+    background: linear-gradient(to right, rgba(112, 46, 46, 1),rgba(112, 46, 46, 0.8) 70%, rgba(0,0,0,0));
+    margin-top: -62px;     /*  正确的是-7  */
+    position: relative;
+    float: center;
+    margin-left:auto; 
+	margin-right:auto;   
+}
+.video_show{
+    width : 384px;
+    height : 288px;
+    border : 2px solid #deb887;
+}
+#progress{
+    height: 12px;
+    width: 192px;
+    position:absolute;
+    top: 12px;
+    left: 60px;
+    cursor: pointer;
+}
+.timebox{
+    position:absolute;
+    top: 9px;
+    left: 252px;
+    cursor: pointer;
+    color: white;
+}
+}
+.imgfilename{
+  color: rgb(000,000,255);
+  width:280px;
+  font-weight: 500;
+  float: center;
+}
+#leftDiv {
+    width: 14%;
+}
+
+#middleDiv {
+  width: 85%;
+/* width: calc(100% - 600px);  /*设置middleDiv宽度 calc()的作用为动态计算长度值，允许各种单位混合运算，运算符前后需有空格。*/
+}
+
+#leftDiv,#middleDiv {
+    float: left;  /*向左浮动*/
+    height: 120px;  
+}
+#setting-01 {
+  width: 20%;
+}
+#setting-02 {
+  width: 15%;
+}
+#setting-03 {
+  width: 10%;
+}
+#setting-04 {
+  width: 40%;
+}
+#setting-05 {
+  width: 40%;
+}
+#setting-01,#setting-02,#setting-03,#setting-04,#setting-05{
+    float: left;  /*向左浮动*/
+    height: 110px;
+}
+#setting-04,#setting-05{
+    float: left;  /*向左浮动*/
+    height: 60px;
+}
+.submitbtn{
+    width:140px;
+    height:28px;
+    line-height:18px;
+    font-size:18px;
+  /*  background:url("bg26.jpg") no-repeat left top; */
+  /*  background-color: #ffffff; */
+    color:#FFF;
+    padding-bottom:4px
+  }
+  
+  .submitbtn:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+col-md-6 i{
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .btn_login {
+    font-size: 14px;
+/*    font-family: 宋体; */
+ 
+    width: 70px;
+    height: 28px;
+    line-height: 14px;
+    text-align: center;
+    color: green;
+    background-color: #ced4da;
+    border-style:solid;
+    border-color:#bfcad5;
+    border-radius: 0.25rem;
+    border: 0;
+    float: left;
+  }
+  .btn_login:hover {
+    color: green;
+    background-color: #b3c8cd;
+    cursor: pointer;/*鼠标变成手指样式*/
+/*    text-decoration: underline; */
+ }
+  #code:hover{
+    cursor: pointer;/*鼠标变成手指样式*/
+ }
+  #change_code:hover{
+    cursor: pointer;/*鼠标变成手指样式*/
+ }
+  #autologin:hover{
+    cursor: pointer;/*鼠标变成手指样式*/
+ }
