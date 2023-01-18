@@ -137,196 +137,39 @@ if ( $show_titlebar ) : ?>
 <html>
 <head>
    <title>EMS IOT</title>
-<!--   <link rel="stylesheet" type="text/css" href='/iot_static/iot_style.css'/> -->
+   <link rel="stylesheet" type="text/css" href='https://bilingualplan.com/wp-content/themes/easyweb/iot_static/style.css'/>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 提高电脑，手机 移动装置显示位置兼容性 -->
    <script src="https://code.jquery.com/jquery-3.5.0.js"></script> <!--没有这个文件，JavaScript 功能可能失效-->
-
-<style>
-.iot_text_field {
-    width: 20px;
-    height: 12px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: 2;
-}
-.img-video
-  {  
-  padding:4px;
-  line-height:1.42857143;
-  background-color:#fff;
-  border:2px solid #ddd;
-  border-radius:6px;
-  max-width:95%;
-  height:510px;
-  float: center;
- }
- .box{
-	width:640px; 
-	height:480px; 
-	margin-left:auto; 
-	margin-right:auto; 
-	/* background:#f0f3f9 url(/study/image/loading.gif) no-repeat center;  */
-	text-align:center; overflow:hidden; position:relative;
-}
-.box img{
-	vertical-align:middle;
-}
-.vline{
-	display:inline-block; 
-	height:100%; width:0; 
-	vertical-align:middle;
-}
-.prev, .next{
-	width:50%; 
-	_height:2000px; 
-	background-image:url(about:blank); 
-	position:absolute; 
-	top:0; 
-	bottom:0; outline:none;
-}
-.prev{
-	cursor:url(https://bilingualplan.com/wp-content/themes/easyweb/pic_prev.ico) 4 20, auto;
-	left:0;
-}
-.next{
-	cursor:url(https://bilingualplan.com/wp-content/themes/easyweb/pic_next.ico) 4 20, auto; 
-	right:0;
-}
-.imgfilename{
-	display:block; 
-	width:400px; 
-	height:18px; 
-	margin-left:auto; 
-	margin-right:auto;
-}
-#leftDiv {
-    width: 14%;
-}
-
-#middleDiv {
-  width: 85%;
-/*    width: calc(100% - 600px);  /*设置middleDiv宽度 calc()的作用为动态计算长度值，允许各种单位混合运算，运算符前后需有空格。*/
-}
-
-#leftDiv,#middleDiv {
-    float: left;  /*向左浮动*/
-    height: 120px;  
-}
-#setting-01 {
-  width: 20%;
-}
-#setting-02 {
-  width: 15%;
-}
-#setting-03 {
-  width: 10%;
-}
-#setting-04 {
-  width: 40%;
-}
-#setting-05 {
-  width: 40%;
-}
-#setting-01,#setting-02,#setting-03,#setting-04,#setting-05{
-    float: left;  /*向左浮动*/
-    height: 110px;
-}
-#setting-04,#setting-05{
-    float: left;  /*向左浮动*/
-    height: 60px;
-}
-
-/*
-body,div,img{
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
- */              
-#container_play_control{
-    width: 560px;
-    /*height: 400px;*/
-    /*   border: 1px solid pink; */
-    /*position: relative;*/
-}
-.pos{
-    width: 560px;
-    height: 44px;
-    /*      background: #544646; */
-    background: linear-gradient(to right, rgba(112, 46, 46, 1),rgba(112, 46, 46, 0.8) 70%, rgba(0,0,0,0));
-    margin-top: -64px;
-    margin-left: 3px;
-    position: relative;
-}
-#playBtn{
-    position:absolute;
-    top: 2px;
-    left: 20px;
-    cursor: pointer;
-}
-#progress{
-    height: 12px;
-    width: 240px;    /* 280 ORG */
-    position:absolute;
-    top: 24px;
-    left: 80px;
-    cursor: pointer;
-    
-}
-.timebox{
-    position:absolute;
-    top: 20px;
-    left: 350px;
-    cursor: pointer;
-    color: white;
-}
-#full{
-    position:absolute;
-    top: 4px;
-    right: 20px;
-/*    cursor: pointer;  */
-}
-</style>
-
 </head>
 
 <body>
    <div id= "iot-container" class="iot-container" style="position:relative;top:-30px;">
-     <div id='side_cam' class="img-video" style="position:relative;top:5px;text-align: center;">
-       <div id="main">
-          <div id="body" class="light">
-    	       <div id="content" class="show">
-            	  <div id="box" class="box">                	
-                    <s class="prev" title="这是第一张图片"></s>
-                    <s class="next" title="下一张"></s>
-                    <video id = "video_show" width="640" height="480" style="border:2px solid #deb887" controls="controls">
-                        <source id = "video_src" src="<?php echo $imgurl_meeting_room; ?>" 
-                        type="video/mp4">
+     <div id='side_cam' class="img-video">
+            <div id="box" class="box">                	
+                    <video id = "video_show" class = "video_show" controls="controls">
+                        <source id = "video_src" src="<?php echo $imgurl_meeting_room; ?>" type="video/mp4">
                     </video>
-                    <div class="pos">
-                     <img src="https://bilingualplan.com/wp-content/themes/easyweb/play_on2.png" width="40px" id="playBtn" />
+                <div class="pos">
+                     <img src="https://bilingualplan.com/wp-content/themes/easyweb/play_on.png" width="30px" id="playBtn" />
                      <progress  value="0" id="progress"></progress>
-                        <div class="timebox">
+                    <div class="timebox">
                             <span id="time1">
                                00:00:00
                             </span>/
                             <span id="time2">
                                00:00:00
                             </span>
-                        </div>
+                    </div>
           <!--           <img src="https://bilingualplan.com/wp-content/themes/easyweb/play_full.png" width="35px" id="full"/>  -->   
                      <img src="https://bilingualplan.com/wp-content/themes/easyweb/play_full.png" width="1px" id="full"/>
-                   </div>
+                </div>
                   <!--  <img src="<?php echo $imgurl_meeting_room; ?>" width="640" height="480" style="border:2px solid #deb887"/> --><i class="vline"></i>
-                </div> 
+            </div> 
 		            <div style="text-align: center;">
-				            <a id = "imgfilename_meeting_room" style = "color: rgb(000,000,255);width:280px;font-weight: 500;float: center;"><?php echo substr($files_meeting_room[0],0,31); ?></a><br>
-                </div>           
-             </div>       
-          </div>
-      </div>
-   </div>
+				            <a id = "imgfilename_meeting_room" class ="imgfilename"><?php echo substr($files_meeting_room[0],0,31); ?></a><br>
+                    </div>           
+     </div>
 
 <!--
        <div id='mobile_cam' class="img-video" align="center" style="position:relative;top:5px;">
@@ -425,11 +268,11 @@ body,div,img{
                     </div>
                     <div id="setting-05" style="position:relative;top:10px;">
  <!--                  <button type="button" id = "Save_Settings" class = "btn btn-block btn-md btn-primary" style = "position:relative;top:50px;color: white; rgb(255,66,66);width:100px;font-weight: 700;" onclick="Save_setting_Function()">保存设置</button> -->
-                    <input type="submit" id = "Save_Settings" value="设置" class = "btn btn-block btn-md btn-primary" style = "position:relative; color: white; rgb(255,66,66); width:68px; height:20;font-weight: 700;text-align: left;"/>
+                    <input type="submit" id = "Save_Settings" value="设  置"  class = "submitbtn"/>
  <!--                  <input type="reset" value="重置" class = "btn btn-block btn-md btn-primary" style = "color: white; rgb(255,66,66);width:60px; height:20;font-weight: 700;"/> -->
                     </div>          
-     </form>
           </div>
+     </form>     
 <!-- 
        <div align="center" style="position:relative;top:10px;">
          <a id = "exit_page_1" href="/"><font color="#0000ff">Exit the page safely</font></a>
